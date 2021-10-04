@@ -1,62 +1,26 @@
 # Nascer e Pôr do Sol
 
-
 This app allows the user to find sunrise and sunset times <br>
 
+## **Motivation**
 
-## Contributors 
-
--  ![TechnicalParadox](./assets/images/5107397.png) **Giamo Lao**
--  ![Gintstir](./assets/images/70384913.png) **Gintautas Stirbys**
-
-## Project Requirements
-
-
-- [x] Use a CSS framework other than Bootstrap.
-- [x] Be deployed to GitHub Pages. 
-- [x] Be interactive (i.e., accept and respond to user input).
-- [x] Use at least two server-side APIs.
-- [x] Does not use alerts, confirms, or prompts (use modals).
-- [x] Use client-side storage to store persistent data. 
-- [x] Be responsive.
-- [x] Have a polished UI. 
-- [x] Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming  conventions, indentation, quality comments, etc.).
-- [x] Have a quality README.
-- [x] Finally, you must add your project to the portfolio that you created in Module 2.
-
-
+Project developed so that users can manage their work on the beach, or in the countryside. 
 <br>
 
-## Links
-
-Link to the [Github Repository](https://technicalparadox.github.io/)<br> 
-
-Link to the [Deployed Webiste](https://technicalparadox.github.io/solar-time-tracker/)<br>
-
-Link to [Giamo's Portfolio](https://technicalparadox.github.io/)
-
-Link to [Gint's Portfolio](https://gintstir.github.io/Portfolio/)<br>
-
+With it you can have the following information: 
+- Sunrise 
+- Solar noon 
+- Sunset 
+- Duration of the day
+<br>
 
 ## Screenshots 
-
 
 Screenshot of website:
 
 > ![Nascer e Pôr do Sol](./assets/images/png/index.png)
 
-
 <br>
-
-## **Motivation**
-
-This group project allowed us to practice a wide range of new skills including but not limited to:
-
-- Becoming more adept at managing Github worklflow.
-- Learning and implementing a new CSS framework.
-- Navigating and problem solving merge conflicts using Git and Github.
-
-
 ## Tech/Framework Used
 
 This project was built from the ground up using:
@@ -66,16 +30,15 @@ This project was built from the ground up using:
 - jQuery
 - <a href="https://bulma.io/" target="_blank">Bulma</a>
 - <a href="https://fontawesome.com/" target="_blank">FontAwesome</a>
-<br>
 
+<br>
 ## API Reference
 
 This project uses calls to the following APIs:
-
  - <a href="https://sunrise-sunset.org/api" target="_blank">Sunrise-Sunset API</a>
  - <a href="https://opencagedata.com/api" target="_blank">OpenCage API</a>
- - <a href="https://moment.github.io/luxon/docs/identifiers.html" target="_blank">Luxon</a>
-
+ - <a href="https://moment.github.io/luxon/#/?id=luxon" target="_blank">Luxon</a>
+ - <a href="https://www.flaticon.com/authors/iconixar">Flaticon.</a>
 
 ## License
 <br>
@@ -93,17 +56,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## **Credits**
 
-Thank you to @Iconixar from <a href="https://www.flaticon.com/authors/iconixar">flaticon.</a> <br>
+<a href="https://opensource.org/licenses/MIT">Open Source Initiative</a> <br>
 
-Thank you to <a href="https://opensource.org/licenses/MIT">Open Source Initiative</a> for the license found above.  
-
-Thanks to UPennLPS Coding Bootcamp. Thank you to the bootcamp instructors and TA's for all their help along the way ❤.  
-
-
-
-
-
-
-
-
-
+- Base for this project <a href="https://github.com/TechnicalParadox/solar-time-tracker">TechnicalParadox.</a>
