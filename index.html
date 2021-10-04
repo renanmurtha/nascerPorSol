@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Nascer e Pôr do sol</title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
+    <style>
+        * {
+            cursor: default !important;
+        }
+
+        * a {
+            cursor: pointer !important;
+        }
+
+        * input {
+            cursor: auto !important;
+        }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        @media print {
+            .container {
+                width: auto;
+
+            }
+        }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/pricing.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <h5 class="my-0 mr-md-auto font-weight-normal">Nascer e Pôr do Sol</h5>
+        <nav id="dropdown-recents" class="my-2 my-md-0 mr-md-3mr-sm-2">
+        </nav>
+
+
+    </div>
+    <div class="container col-auto">
+        <div class="pricing-header px-6 py-6 pt-md-10 pb-md-4 mx-auto text-center">
+            <h3 class="display-4">Escolha o Local</h3>
+            <div class="input-group mb-3">
+                <input name="input_search" id="input_search" type="text"
+                    class="form-control d-flex flex-column flex-md-row align-items-center"
+                    placeholder="Recipient's username" aria-label="Recipient's username"
+                    aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button id="button_search" class="btn btn-outline-success" type="button">Pesquisar</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Nascer do sol</h4>
+                </div>
+                <div class="card-body">
+
+                    <h1 class="card-title pricing-card-title">
+                        <img class="mb-2" src="./assets/images/svg/sunrise.svg" alt="" width="24" height="24">
+                        <small class="text-muted">
+                            <span id="time_sunrise_desktop" class="has-text-warning has-text-weight-medium"></span>
+                        </small>
+                    </h1>
+                </div>
+            </div>
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Meio-dia solar</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">
+                        <img class="mb-2" src="./assets/images/svg/sun.svg" alt="" width="24" height="24">
+                        <small class="text-muted">
+                            <span id="time_noon" class="has-text-info has-text-weight-medium">
+                            </span>
+                        </small>
+                    </h1>
+                </div>
+            </div>
+
+
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Pôr do sol</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">
+                        <img class="mb-2" src="./assets/images/svg/sunset.svg" alt="" width="24" height="24">
+                        <small class="text-muted">
+                            <span id="time_sunset" class="has-text-danger has-text-weight-medium"></span>
+                        </small>
+                    </h1>
+                </div>
+            </div>
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Duração do dia</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title"><small class="text-muted"><span id="time_day_length"
+                                class="has-text-warning has-text-weight-medium"></span></small></h1>
+                </div>
+            </div>
+
+        </div>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Configuração</h4>
+            </div>
+            <div class="card-body">
+                <div id="switch-civ-time" class="list-group-item">
+                    Horário Militar ( AM/PM )
+                    <div class="check-button check-button-success">
+                        <input id="switchRoundedOutlinedWarning" type="checkbox" name="switchRoundedOutlinedWarning"
+                            class="check">
+                        <span id="span-type-time">
+                            <label for="switchRoundedOutlinedWarning">
+                            </label></span>
+                    </div>
+                </div>
+                <div id="switch-search-timezone" class="list-group-item">
+                    Fuso Horário Local
+                    <div class="check-button check-button-success">
+                        <input id="switchRoundedOutlinedInfo" type="checkbox" name="switchRoundedOutlinedInfo"
+                            class="check">
+                        <span id="span-timezone"><label for="switchRoundedOutlinedInfo">
+                            </label></span>
+                    </div>
+                </div>
+                <div id="switch-html5-location" class="list-group-item">
+                    Localização Automática
+                    <div class="check-button check-button-success">
+                        <input id="switchRoundedOutlinedDanger" type="checkbox" name="switchRoundedOutlinedDanger"
+                            class="check">
+                        <span id="span-location"><label for="switchRoundedOutlinedDanger">
+                            </label></span>
+                    </div>
+                </div>
+
+            </div>
+            <!--
+                https://foxythemes.net/preview/products/beagle/form-elements.html
+            -->
+        </div>
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="row">
+                <div class="col-6 col-md">
+                    <h5>Features</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://sunrise-sunset.org/api">Sunrise Sunset
+                            </a></li>
+                        <li><a class="text-muted" href="https://favicon.io/">Avicon.io
+                            </a></li>
+                        <li><a class="text-muted" href="https://feathericons.com/">Feathericons
+                            </a></li>
+                        <li><a class="text-muted" href="https://moment.github.io/luxon/">Luxon.js
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md">
+                <!--<img class="mb-2" src="" alt="" width="96" height="480">-->
+                <!--<small class="d-block mb-3 text-muted text-right">&copy; Renan Murtha</small>-->
+                <small class="d-block mb-3 text-muted text-right">Renan Murtha</small>
+            </div>
+        </footer>
+    </div>
+
+    <!-- cdn for jquery -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- load Luxon JS for time helping needs -->
+    <script src="./assets/js/luxon.min.js"></script>
+
+    <script src="./assets/js/script.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#redec").click(function () {
+                var selectedRedec = $(this).children("option:selected").val();
+                $("#input_search").val(selectedRedec);
+            });
+        });
+
+        $(function () {
+            var nua = navigator.userAgent
+            var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1)
+            if (isAndroid) {
+                $('select.form-control').removeClass('form-control').css('width', '100%')
+            }
+        })
+    </script>
+</body>
+
+</html>

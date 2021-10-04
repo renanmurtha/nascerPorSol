@@ -1,0 +1,166 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    background-color: hsl(34, 94%, 50%);
+    color: white;
+    text-align: center;
+}
+
+.input::placeholder {
+    color: white;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+/* for nav bar */
+
+#github-link:hover {
+  background-color:hsl(34, 94%, 50%);
+}
+#recent-search:hover,
+#navbar-itm-1:hover,
+#navbar-itm-2:hover {
+  background-color: hsl(34, 94%, 50%);
+}
+/* hide checkbox */
+.has-dropdown input[type=checkbox] {
+  display: none;
+}
+/* hide by default */
+.navbar-dropdown {
+  display: none;
+}
+/*opens and closes dropdown on smaller screen sizes*/
+#dropdown1:checked ~ #dropdown-recents,
+#dropdown2:checked ~ #about-us-dropdown {
+  display: block;
+}
+
+
+
+/* .navbar-item.left:hover {
+  background-color: hsl(48, 100%, 67%);
+} */
+/* .subtitle {
+    white-space: nowrap;
+} */
+
+/* .hero-text {
+     font-size: 3rem;
+    white-space: normal;
+} */
+
+/* Slider swicthes */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.switch::after {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius:50%;
+  background-color: white;
+  top: 1px;
+  left: 1px;
+  transition: all 0.3s;
+}
+
+.checkbox:checked + .switch::after {
+  left : 20px;
+}
+.checkbox:checked + .switch {
+  background-color: #7983ff;
+}
+.checkbox {
+  display : none;
+}
+/* slider switches end */
+
+
+
+@media (max-width: 672px) {
+	:root {
+		font-size: 90%;
+	}
+}
+/* card positioning */
+
+
+/* Search section */
+.search {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Scroll cue start */
+
+.header-down-arrow {
+  position: absolute;
+    bottom: 1vh;
+    left: 0;
+    right: 0;
+  text-align: center;
+  z-index: 1;
+  display: none;
+}
+
+@keyframes fade-slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: none;
+  }
+  50% {
+    opacity: .8;
+    transform: scale(.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.header-down-arrow img {
+  animation: fade-slide-up 1s .5s ease-out forwards,
+    pulse 2s 1.5s ease-out infinite;
+  opacity: 0;
+}
+
+/* Scroll cue end */
+
+
+@media screen and (min-width: 1024px)
+{
+  .header-down-arrow
+  {
+    display: block;
+  }
+
+  .has-desktop-spacer
+  {
+    padding-bottom: 140px;
+  }
+}
