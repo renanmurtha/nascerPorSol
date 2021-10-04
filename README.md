@@ -20,7 +20,6 @@ Screenshot of website:
 
 > ![Nascer e Pôr do Sol](./assets/images/png/index.png)
 
-<br>
 ## Tech/Framework Used
 
 This project was built from the ground up using:
@@ -31,7 +30,6 @@ This project was built from the ground up using:
 - <a href="https://bulma.io/" target="_blank">Bulma</a>
 - <a href="https://fontawesome.com/" target="_blank">FontAwesome</a>
 
-<br>
 ## API Reference
 
 This project uses calls to the following APIs:
@@ -42,7 +40,7 @@ This project uses calls to the following APIs:
 
 ## License
 <br>
- 
+
 **MIT License**
 <br>
 
